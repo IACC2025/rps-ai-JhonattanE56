@@ -1,6 +1,6 @@
 # Documentacion de Recogida de Datos
 
-**Alumno:** ___________________
+**Alumno:** Jhonattan Elías Prieto Morillo
 
 ## Formato del CSV
 
@@ -31,7 +31,7 @@ Marca con [x] el metodo usado y describe brevemente:
 
 ### Metodo de recogida:
 
-- [ ] **Programa propio**: Cree un programa para jugar y guardar datos
+- [X] **Programa propio**: Cree un programa para jugar y guardar datos
 - [ ] **Manual**: Jugue partidas y apunte los resultados a mano
 - [ ] **Aplicacion/Web externa**: Use una app y exporte los datos
 - [ ] **Otro**: _________________
@@ -39,12 +39,8 @@ Marca con [x] el metodo usado y describe brevemente:
 ### Descripcion del proceso:
 
 ```
-(Explica aqui como recogiste los datos. Si usaste un programa,
-describe brevemente como funciona. Si fue manual, explica el proceso.)
-
-
-
-
+Hice un juego en Python (src/juego.py) para jugar con otra persona, el juego inicia un contador, cuando termina, los jugadores tienen 3 segundos para jugar.
+Se guarda la primera jugada (la opción) elegida de cada jugador y se pasa a la siguiente ronda.
 ```
 ---
 
@@ -52,30 +48,31 @@ describe brevemente como funciona. Si fue manual, explica el proceso.)
 
 Si capturaste datos extra ademas de los basicos, marcalos aqui:
 
-- [ ] `tiempo_reaccion_ms` - Tiempo que tardo el jugador en responder
-- [ ] `timestamp` - Fecha/hora de cada jugada
-- [ ] `sesion` - ID de sesion de juego
-- [ ] `resultado` - victoria/derrota/empate
+- [X] `tiempo_reaccion_ms` - Tiempo que tardo el jugador en responder
+- [X] `timestamp` - Fecha/hora de cada jugada
+- [X] `sesion` - ID de sesion de juego
+- [X] `resultado` - victoria/derrota/empate
 - [ ] Otro: _________________
 
 ### Descripcion de datos adicionales:
 
 ```
-(Si capturaste datos extra, explica aqui por que y como los usas)
-
-
+-El tiempo de reacción lo considero útil para ver si tenemos jugadas calculadas o impulsivas/aleatorias, también sirvió para comprobar el contador de límite de tiempo por partida.
+-La fecha de la partida está bien a modo de seguimiento del proyecto.
+-Con la sesión puedo dividir los datos según la persona con la que he probado el juego.
+-Resultado: A modo de resumen de cada partida.
 ```
 
 ---
 
 ## Estadisticas del dataset
 
-- **Total de rondas:** _____
-- **Numero de sesiones/partidas:** _____
-- **Contra cuantas personas diferentes:** _____
+- **Total de rondas:** 203
+- **Numero de sesiones/partidas:** 4
+- **Contra cuantas personas diferentes:** 4
 
 ### Tipo de IA:
 
 - [ ] **IA Especifica**: Entrenada para ganar a UNA persona concreta
   - Nombre/identificador del oponente: _________________
-- [ ] **IA General**: Entrenada para ganar a cualquier oponente
+- [X] **IA General**: Entrenada para ganar a cualquier oponente
